@@ -1496,3 +1496,139 @@ textarea {
     width: 100%;
   }
 }
+/* ==================================================
+   PPT Brand Title Refinement
+================================================== */
+
+.program-title .brand-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.program-title .ecnu-title {
+  color: #d92d39;
+
+  font-size: clamp(58px, 7vw, 92px);
+
+  font-weight: 900;
+
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+
+  -webkit-text-fill-color: #d92d39;
+
+  text-shadow:
+    0 5px 0 #ffffff,
+    0 8px 0 rgba(7, 59, 121, 0.10);
+}
+
+.program-title .title-cross {
+  color: #f3b51b;
+
+  font-size: clamp(46px, 5vw, 72px);
+
+  font-weight: 900;
+
+  -webkit-text-fill-color: #f3b51b;
+
+  transform: rotate(-5deg);
+}
+
+.program-title .ib-title {
+  color: #073b79;
+
+  font-size: clamp(58px, 7vw, 92px);
+
+  font-weight: 900;
+
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+
+  -webkit-text-fill-color: #073b79;
+
+  text-shadow:
+    0 5px 0 #ffffff,
+    0 8px 0 rgba(7, 59, 121, 0.10);
+}
+
+.program-title .program-name {
+  display: block;
+
+  max-width: 720px;
+
+  color: #d92d39;
+
+  font-size: clamp(31px, 4vw, 53px);
+
+  font-weight: 900;
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+
+  -webkit-text-fill-color: #d92d39;
+}
+
+
+/* ==================================================
+   Navigation With Labels
+================================================== */
+
+.main-nav a {
+  width: auto;
+  min-width: 62px;
+  height: 48px;
+
+  padding: 5px 10px;
+
+  flex-direction: column;
+
+  gap: 0;
+
+  border-radius: 15px;
+
+  line-height: 1.05;
+}
+
+.main-nav a strong {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.main-nav a span {
+  margin-top: 3px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+/* ==================================================
+   Mobile
+================================================== */
+
+@media (max-width: 780px) {
+
+  .main-nav a span {
+    display: none;
+  }
+
+  .main-nav a {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+
+    padding: 0;
+
+    border-radius: 50%;
+  }
+
+  .program-title .brand-title {
+    gap: 10px;
+  }
+}
